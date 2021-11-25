@@ -1,6 +1,6 @@
 # Unsplash_API
 
-## Navbar
+## Logo created Using Circles
 
 ![Navbar](Images/Joby_Branding.png)
 
