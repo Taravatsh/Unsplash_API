@@ -1,0 +1,119 @@
+/* Add Style to the index.html page */
+
+body{
+  font-family:'Times New Roman', Times, serif;
+  background-color: white;
+}
+
+.navbar {
+  background-color: #0F1621;
+  margin-bottom: 40px;
+}
+
+h1 {
+  word-spacing: 135px;
+  margin-left: 90px;
+}
+
+#content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+/* Create circles for the logo */
+.circle {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color:#FF9700;
+  position: absolute;
+}
+
+.big {
+  width: 50px;
+  height: 50px;
+  background-color: #0F1621;
+  margin-left: 200px;
+  margin-top: -30px;
+}
+
+.one {
+  left: -5px;
+  top: -20px;
+}
+
+.two {
+  right: -5px;
+  top: -20px;
+}
+
+.three {
+  left: -25px;
+  bottom: 15px;
+}
+.four {
+  right: -25px;
+  bottom: 15px;
+}
+
+.five {
+  left: -5px;
+  bottom: -20px;
+}
+
+.six {
+  right: -5px;
+  bottom: -20px;
+}
+
+/* Reference the img tag created in script.js */
+.img {
+    width: 500px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #search {
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 5px;
+  }
+
+  #share-dialog {
+
+    border-radius: 20px;
+    color: #0F1621;
+    background-color: wheat;
+    margin-top: 20px;
+    padding: 5px;
+  }
+  button {
+    border-radius: 10px;
+    color: #0F1621;
+    background-color: wheat;
+    font-size: large;
+    font-weight: bold;
+    padding: 4px;
+  }
+
+  footer {
+    margin-top: 80px;
+  }
+  
+  .card-footer{
+    display: flex;
+    justify-content: center;
+  }
