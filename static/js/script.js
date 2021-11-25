@@ -76,7 +76,7 @@ shareButton.addEventListener('click', () => {
              title:`${title}`,
              url: `${url}`
          }).then(() => {
-            resultPara.textContent = 'MDN shared successfully'
+            resultPara.textContent = 'Web Page shared successfully'
          })
         
     } catch(err) {
