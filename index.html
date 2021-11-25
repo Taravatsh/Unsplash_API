@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unsplash API</title>
+
+  <!-- Bootstrap CSS-->
+  <link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous"
+  />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="static/css/style.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+  <main>
+    <section>
+      <!-- Navbar - Contains the Joby Aviation Logo -->
+      <div class="navbar">
+        <h1 style="font-size: 130px; color:#FF9700;">J BY</h1>
+        <h2 style= "color: #EEE8DD; margin-top: 5px; margin-right: 500px; letter-spacing: 30px; margin-left: 90px;"> AVIATION</h2>
+          <div id="big-circle" class="big circle">
+            <div class="circle one"></div>
+            <div class="circle two"></div>
+            <div class="circle three"></div>
+            <div class="circle four"></div>
+            <div class="circle five"></div>
+            <div class="circle six"></div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- Header - Contains the search button and placeholder -->
+    <header>
+      <div class="container">
+        <div id="content" style="margin-left: -80px;">
+          <h2 style="color: #FF9700; font-weight: bolder;"><i class="fas fa-camera-retro" style= "color: #0F1621;" ></i> Unsplash API</h2>
+          <div id="input">
+            <i class="fas fa-search fa-lg" style="color: #0F1621;" id="search-icon"></i>
+            <input type="text" placeholder="Kittens" id="search">
+             <button type="search-image">Search</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Creating photo-grid id to append the images to it-->
+    <section>
+      <div class="gallery">
+        <div id="photo-grid">
+        </div>
+      </div>
+    </section>
+  
+
+  </main>
+  
+  <!-- Footer - Container the button to load more images from the API-->
+  <footer class="card-footer">
+     <button id="load-images">Load More Images</button>
+  </footer>
+
+  <!-- share Dialog-->
+   <div class="share text-center">
+    <div class="container">
+      <button class= "fas fa-share-square" id="share-dialog">SHARE</button>
+      <a class="share"></a>
+    </div>
+</div>
+
+<!-- Reference to Javascript script file -->
+<script src="static/js/script.js"></script>
+</body>
+</html>
