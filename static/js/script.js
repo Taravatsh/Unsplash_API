@@ -1,7 +1,7 @@
 // Assignment - Unsplash API
 
 // Add event listener to the search button to query to Unsplash API.
-const buttonSearch = document.querySelector('button[type="search-image"]');
+const buttonSearch = document.querySelector("#search-image");
 buttonSearch.addEventListener('click', () => {
     queryImage();
 });
