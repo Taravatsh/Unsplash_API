@@ -1,11 +1,8 @@
 // Assignment - Unsplash API
 
 // Add event listener to the search button to query to Unsplash API.
-const buttonSearch = document.querySelector("#search-image");
-buttonSearch.addEventListener('click', () => {
-    queryImage();
-});
-
+const buttonSearch = document.getElementById("search-image");
+buttonSearch.addEventListener('click', queryImage)
 // Create a page variable to be able to make the url dynamic for loading more pictures.
 var page = "1";
 
@@ -50,12 +47,12 @@ displayImages = (data) => {
           window.open(data.results[i].urls.full);
       })
       // Append the images to the photo-grid id.
-      document.querySelector("#photo-grid").appendChild(image);
+      document.getElementById("photo-grid").appendChild(image);
     }
 }
 
 // Add event listener to load images button for pagination.
-const loadImages = document.querySelector("#load-images");
+const loadImages = document.getElementById("load-images");
 loadImages.addEventListener('click', () => {
     page ++;
     queryImage();
@@ -66,8 +63,8 @@ const title = window.document.title;
 const url =  window.document.location.href;
 
 // Select the share-dialog id and share class from index.html.
-const shareButton = document.querySelector("#share-dialog");
-const resultPara = document.querySelector('.share');
+const shareButton = document.getElementById("share-dialog");
+const resultPara = document.getElementsByClassName('share');
 
 // Create a share dialog.
 shareButton.addEventListener('click', () => {
