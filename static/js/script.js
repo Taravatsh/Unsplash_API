@@ -63,8 +63,8 @@ const title = window.document.title;
 const url =  window.document.location.href;
 
 // Select the share-dialog id and share class from index.html.
-const shareButton = document.getElementById("share-dialog");
-const resultPara = document.getElementsByClassName('share');
+const shareButton = document.querySelector("#share-dialog");
+const resultPara = document.querySelector('.share');
 
 // Create a share dialog.
 shareButton.addEventListener('click', () => {
